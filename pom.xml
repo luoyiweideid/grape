@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.grape</groupId>
+    <artifactId>grape-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <name>grape-parent</name>
+    <description>luoyiwei管理系统</description>
+
+
+    <modules>
+        <module>grape-blade</module>
+        <module>grape-test</module>
+    </modules>
+
+
+    <properties>
+        <!--编译使用JDK11编译-->
+        <java.version>11</java.version>
+        <revision>0.0.1-SNAPSHOT</revision>
+    </properties>
+
+    <!--编译规则-->
+    <build>
+        <plugins>
+            <plugin>
+                <!--编译java源代码-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
