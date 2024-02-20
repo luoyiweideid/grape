@@ -3,13 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!--父依赖-->
+    <parent>
+        <groupId>com.grape.balde</groupId>
+        <artifactId>blade-dependencies</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.grape</groupId>
     <artifactId>grape-parent</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
     <name>grape-parent</name>
-    <description>luoyiwei管理系统</description>
+    <description>luoyiwei的管理系统</description>
 
 
     <modules>
@@ -22,7 +29,18 @@
         <!--编译使用JDK11编译-->
         <java.version>11</java.version>
         <revision>0.0.1-SNAPSHOT</revision>
+        <lombok-plugin.version>1.18.30</lombok-plugin.version>
+        <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
     </properties>
+
+
+    <!--依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
     <!--编译规则-->
     <build>

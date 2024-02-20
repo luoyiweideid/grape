@@ -13,6 +13,8 @@
     <artifactId>grape-blade</artifactId>
     <packaging>pom</packaging>
     <description>基础组件管理模块</description>
+
+
     <modules>
         <module>blade-web-start</module>
     </modules>

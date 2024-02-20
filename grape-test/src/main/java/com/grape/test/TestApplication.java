@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * 测试启动类
+ *
  * @author : luoyiwei
  * @date : 2024-02-01 17:28
  */

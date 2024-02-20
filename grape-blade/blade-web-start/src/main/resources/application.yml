@@ -1,0 +1,11 @@
+server:
+  #端口号
+  port: 8081
+  servlet:
+    #应用的访问路径
+    context-path: /grape-test
+
+spring:
+  application:
+    #应用名称
+    name: grape-test
