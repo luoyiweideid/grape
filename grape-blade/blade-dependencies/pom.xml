@@ -12,6 +12,7 @@
     <properties>
         <!-- Spring -->
         <spring-boot.version>2.7.7</spring-boot.version>
+        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -28,13 +29,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring-boot.version}</version>
-                <exclusions>
-                    <!--排除tomcat依赖-->
-                    <exclusion>
-                        <artifactId>spring-boot-starter-tomcat</artifactId>
-                        <groupId>org.springframework.boot</groupId>
-                    </exclusion>
-                </exclusions>
+            </dependency>
+            <!--blade-web依赖-->
+            <dependency>
+                <groupId>com.grape.balde</groupId>
+                <artifactId>blade-web-start</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
         </dependencies>

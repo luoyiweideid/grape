@@ -22,6 +22,7 @@
     <modules>
         <module>grape-blade</module>
         <module>grape-test</module>
+        <module>grape-system</module>
     </modules>
 
 
