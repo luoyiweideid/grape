@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.learn.grape</groupId>
+    <groupId>com.grape.system</groupId>
     <artifactId>grape-system</artifactId>
 
     <packaging>pom</packaging>
