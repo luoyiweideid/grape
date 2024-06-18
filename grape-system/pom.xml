@@ -30,6 +30,7 @@
 
     <modules>
         <module>grape-user</module>
+        <module>grape-order</module>
     </modules>
 
 </project>
